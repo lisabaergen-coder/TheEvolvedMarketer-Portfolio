@@ -50,8 +50,8 @@ const HeroSection = () => {
             <div className="grid grid-cols-3 gap-6">
               <div className="text-center p-4">
                 <div className="flex justify-center mb-3">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                    <Award className="text-blue-600" size={24} />
+                  <div className="w-12 h-12 bg-brand-light rounded-full flex items-center justify-center">
+                    <Award className="text-brand-primary" size={24} />
                   </div>
                 </div>
                 <div className="text-3xl font-light text-gray-900 mb-1">{stats.awards}</div>
