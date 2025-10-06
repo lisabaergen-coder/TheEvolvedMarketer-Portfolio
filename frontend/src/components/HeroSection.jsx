@@ -32,7 +32,7 @@ const HeroSection = () => {
               {hero.headline}
             </h1>
             
-            <p className="body-large mb-10 text-gray-700 leading-relaxed">
+            <p className="body-large mb-10 text-gray-700 leading-relaxed text-left">
               {hero.subheadline}
             </p>
             
