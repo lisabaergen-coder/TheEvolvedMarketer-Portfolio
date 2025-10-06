@@ -36,7 +36,7 @@ const Header = () => {
               Success Stories
             </div>
             <div className="text-gray-600 hover:text-brand-primary transition-colors duration-300 font-medium cursor-pointer">
-              Hire Lisa Full-Time
+              Hire a FT CMO
             </div>
             <button className="btn-primary">
               Contact
