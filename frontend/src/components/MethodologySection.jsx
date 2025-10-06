@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronRight, BarChart3, Cog, TrendingUp, Zap } from 'lucide-react';
+import { ChevronRight, BarChart3, Cog, TrendingUp, Zap, ImageIcon } from 'lucide-react';
 import { mockData } from '../mockData';
 
 const MethodologySection = () => {
@@ -13,10 +13,10 @@ const MethodologySection = () => {
   };
 
   return (
-    <section id="methodology" className="section-padding bg-gray-50">
+    <section id="methodology" className="section-padding bg-white">
       <div className="light-content-container">
         <div className="text-center mb-16">
-          <span className="text-blue-600 text-lg font-medium bg-blue-100 px-4 py-2 rounded-full">
+          <span className="text-gray-700 text-lg font-medium bg-brand-light px-4 py-2 rounded-full">
             {methodology.subtitle}
           </span>
           <h2 className="display-large mt-6 mb-8 text-gray-900">
@@ -38,7 +38,7 @@ const MethodologySection = () => {
                   onClick={() => setActiveFramework(index)}
                   className={`w-full text-left p-6 rounded-lg border-2 transition-all duration-300 ${
                     activeFramework === index
-                      ? 'bg-blue-50 border-blue-200 text-gray-900'
+                      ? 'bg-brand-light border-brand-primary text-gray-900'
                       : 'bg-white border-gray-200 text-gray-600 hover:bg-gray-50 hover:border-gray-300'
                   }`}
                 >
@@ -92,11 +92,22 @@ const MethodologySection = () => {
           </div>
         </div>
 
+        {/* IMAGE PLACEHOLDER 2 - Business Transformation */}
+        <div className="mb-16">
+          <div className="image-placeholder max-w-2xl mx-auto">
+            <div className="image-placeholder-icon">
+              <ImageIcon className="text-white" size={24} />
+            </div>
+            <div className="image-placeholder-text">{methodology.imagePlaceholder.title}</div>
+            <div className="image-placeholder-subtext">{methodology.imagePlaceholder.description}</div>
+          </div>
+        </div>
+
         {/* Key Principles */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="card-elevated text-center p-8 bg-white">
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <BarChart3 className="text-blue-600" size={32} />
+            <div className="w-16 h-16 bg-brand-light rounded-full flex items-center justify-center mx-auto mb-6">
+              <BarChart3 className="text-brand-primary" size={32} />
             </div>
             <h3 className="heading-3 mb-4 text-gray-900">Data-Driven</h3>
             <p className="body-small text-gray-600">
@@ -105,8 +116,8 @@ const MethodologySection = () => {
           </div>
 
           <div className="card-elevated text-center p-8 bg-white">
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Cog className="text-blue-600" size={32} />
+            <div className="w-16 h-16 bg-brand-light rounded-full flex items-center justify-center mx-auto mb-6">
+              <Cog className="text-brand-primary" size={32} />
             </div>
             <h3 className="heading-3 mb-4 text-gray-900">Systematic</h3>
             <p className="body-small text-gray-600">
@@ -115,8 +126,8 @@ const MethodologySection = () => {
           </div>
 
           <div className="card-elevated text-center p-8 bg-white">
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <TrendingUp className="text-blue-600" size={32} />
+            <div className="w-16 h-16 bg-brand-light rounded-full flex items-center justify-center mx-auto mb-6">
+              <TrendingUp className="text-brand-primary" size={32} />
             </div>
             <h3 className="heading-3 mb-4 text-gray-900">Results-Focused</h3>
             <p className="body-small text-gray-600">

@@ -6,10 +6,10 @@ const AwardsSection = () => {
   const { awards, stats } = mockData;
 
   return (
-    <section id="awards" className="section-padding bg-white">
+    <section id="awards" className="section-padding bg-gray-50">
       <div className="light-content-container">
         <div className="text-center mb-16">
-          <span className="text-blue-600 text-lg font-medium bg-blue-100 px-4 py-2 rounded-full">
+          <span className="text-gray-700 text-lg font-medium bg-brand-light px-4 py-2 rounded-full">
             Personal Recognition
           </span>
           <h2 className="display-large mt-6 mb-8 text-gray-900">
@@ -41,7 +41,7 @@ const AwardsSection = () => {
               <div className="px-2">
                 <h3 className="font-semibold text-gray-900 text-sm mb-1 line-clamp-2">{award.title}</h3>
                 <p className="text-xs text-gray-500 mb-1">{award.organization}</p>
-                <p className="text-xs text-blue-600 font-medium">{award.year}</p>
+                <p className="text-xs text-brand-primary font-medium">{award.year}</p>
               </div>
             </div>
           ))}
@@ -51,19 +51,19 @@ const AwardsSection = () => {
         <div className="card-elevated p-8 bg-white max-w-4xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl font-light text-blue-600 mb-2">{stats.awards}</div>
+              <div className="text-4xl font-light text-brand-primary mb-2">{stats.awards}</div>
               <div className="text-sm text-gray-500 font-medium">Personal Awards</div>
             </div>
             <div>
-              <div className="text-4xl font-light text-blue-600 mb-2">{stats.experience}</div>
+              <div className="text-4xl font-light text-brand-primary mb-2">{stats.experience}</div>
               <div className="text-sm text-gray-500 font-medium">Years Excellence</div>
             </div>
             <div>
-              <div className="text-4xl font-light text-blue-600 mb-2">{stats.exits}</div>
+              <div className="text-4xl font-light text-brand-primary mb-2">{stats.exits}</div>
               <div className="text-sm text-gray-500 font-medium">Successful Exits</div>
             </div>
             <div>
-              <div className="text-4xl font-light text-blue-600 mb-2">{stats.successRate}</div>
+              <div className="text-4xl font-light text-brand-primary mb-2">{stats.successRate}</div>
               <div className="text-sm text-gray-500 font-medium">Client Success Rate</div>
             </div>
           </div>

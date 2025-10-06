@@ -1,9 +1,9 @@
 import React from 'react';
-import { ArrowRight, CheckCircle, TrendingUp, Cog, Users, Shield } from 'lucide-react';
+import { ArrowRight, CheckCircle, TrendingUp, Cog, Users, Shield, ImageIcon } from 'lucide-react';
 import { mockData } from '../mockData';
 
 const ServicesSection = () => {
-  const { services } = mockData;
+  const { services, servicesImagePlaceholder } = mockData;
 
   const getServiceIcon = (index) => {
     const icons = [TrendingUp, Cog, Users, Shield];
@@ -15,7 +15,7 @@ const ServicesSection = () => {
     <section id="services" className="section-padding bg-white">
       <div className="light-content-container">
         <div className="text-center mb-16">
-          <span className="text-blue-600 text-lg font-medium bg-blue-100 px-4 py-2 rounded-full">
+          <span className="text-gray-700 text-lg font-medium bg-brand-light px-4 py-2 rounded-full">
             Strategic Services
           </span>
           <h2 className="display-large mt-6 mb-8 text-gray-900">
@@ -27,6 +27,17 @@ const ServicesSection = () => {
           </p>
         </div>
 
+        {/* IMAGE PLACEHOLDER 3 - Services & Technology */}
+        <div className="mb-16">
+          <div className="image-placeholder max-w-2xl mx-auto">
+            <div className="image-placeholder-icon">
+              <ImageIcon className="text-white" size={24} />
+            </div>
+            <div className="image-placeholder-text">{servicesImagePlaceholder.title}</div>
+            <div className="image-placeholder-subtext">{servicesImagePlaceholder.description}</div>
+          </div>
+        </div>
+
         <div className="grid-2 mb-16">
           {services.map((service, index) => (
             <div 
@@ -35,8 +46,8 @@ const ServicesSection = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <div className="text-blue-600">
+                <div className="w-16 h-16 bg-brand-light rounded-xl flex items-center justify-center flex-shrink-0">
+                  <div className="text-brand-primary">
                     {getServiceIcon(index)}
                   </div>
                 </div>
@@ -49,8 +60,8 @@ const ServicesSection = () => {
               <div className="space-y-3 mb-6">
                 {service.features.map((feature, featureIndex) => (
                   <div key={featureIndex} className="flex items-center gap-3">
-                    <div className="w-5 h-5 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="text-blue-600" size={12} />
+                    <div className="w-5 h-5 bg-brand-light rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="text-brand-primary" size={12} />
                     </div>
                     <span className="body-small text-gray-600">{feature}</span>
                   </div>
@@ -69,7 +80,7 @@ const ServicesSection = () => {
         </div>
 
         {/* Service Approach */}
-        <div className="card-elevated bg-gradient-to-r from-blue-50 to-white border-2 border-blue-100 p-8">
+        <div className="card-elevated bg-gradient-to-r from-brand-light to-white border-2 border-brand-primary/20 p-8">
           <div className="grid-2">
             <div>
               <h3 className="heading-1 mb-6 text-gray-900">The Evolved Approach</h3>
@@ -80,21 +91,21 @@ const ServicesSection = () => {
               </p>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-brand-primary rounded-full mt-3 flex-shrink-0"></div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Discovery & Analysis</h4>
                     <p className="text-sm text-gray-600">Deep dive into your current state and growth potential</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-brand-primary rounded-full mt-3 flex-shrink-0"></div>
                   <div>
-                    <h4 className="font-semibent text-gray-900 mb-1">Strategic Framework Design</h4>
+                    <h4 className="font-semibold text-gray-900 mb-1">Strategic Framework Design</h4>
                     <p className="text-sm text-gray-600">Custom methodology aligned with your objectives</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-brand-primary rounded-full mt-3 flex-shrink-0"></div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Implementation & Optimization</h4>
                     <p className="text-sm text-gray-600">Hands-on execution with continuous improvement</p>
@@ -104,7 +115,7 @@ const ServicesSection = () => {
             </div>
             <div className="flex items-center justify-center">
               <div className="text-center">
-                <div className="text-6xl font-light text-blue-600 mb-4">300%</div>
+                <div className="text-6xl font-light text-brand-primary mb-4">300%</div>
                 <p className="text-gray-600 font-medium">Average growth increase across client engagements</p>
               </div>
             </div>

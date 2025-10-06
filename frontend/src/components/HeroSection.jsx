@@ -13,7 +13,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="pt-20 section-padding bg-gradient-to-br from-blue-50 to-white">
+    <section className="pt-20 section-padding bg-gradient-to-br from-brand-light to-white">
       <div className="light-content-container">
         <div className="grid-2">
           {/* Left Content */}
@@ -28,7 +28,7 @@ const HeroSection = () => {
               {hero.title}
             </h1>
             
-            <h2 className="heading-2 mb-8 text-gray-700 font-medium">
+            <h2 className="heading-2 mb-8 text-brand-primary font-medium">
               {hero.name}
             </h2>
             
@@ -92,7 +92,7 @@ const HeroSection = () => {
               </div>
               
               {/* Floating Credential Badges */}
-              <div className="absolute -top-4 -right-4 bg-brand-primary text-black px-4 py-2 rounded-lg text-sm font-medium shadow-lg">
+              <div className="absolute -top-4 -right-4 bg-brand-primary text-white px-4 py-2 rounded-lg text-sm font-medium shadow-lg">
                 APR Certified
               </div>
               <div className="absolute -bottom-4 -left-4 bg-white text-gray-800 px-4 py-2 rounded-lg text-sm font-medium shadow-lg border border-gray-200">

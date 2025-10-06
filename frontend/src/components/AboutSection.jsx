@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle, Lightbulb, Target, Zap } from 'lucide-react';
+import { CheckCircle, Lightbulb, Target, Zap, ImageIcon } from 'lucide-react';
 import { mockData } from '../mockData';
 
 const AboutSection = () => {
@@ -70,8 +70,17 @@ const AboutSection = () => {
             </div>
           </div>
 
-          {/* Right Content - Achievements */}
-          <div className="fade-in">
+          {/* Right Content - Image Placeholder & Achievements */}
+          <div className="fade-in space-y-6">
+            {/* IMAGE PLACEHOLDER 1 - Professional Consultation */}
+            <div className="image-placeholder">
+              <div className="image-placeholder-icon">
+                <ImageIcon className="text-white" size={24} />
+              </div>
+              <div className="image-placeholder-text">{about.imagePlaceholder.title}</div>
+              <div className="image-placeholder-subtext">{about.imagePlaceholder.description}</div>
+            </div>
+
             <div className="card-elevated p-8 bg-white">
               <h3 className="heading-2 mb-6 text-center text-gray-900">Recognition & Expertise</h3>
               
