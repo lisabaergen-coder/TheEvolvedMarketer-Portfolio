@@ -1,0 +1,249 @@
+import React, { useState } from 'react';
+import { Mail, Linkedin, Send, CheckCircle } from 'lucide-react';
+import { mockData } from '../mockData';
+
+const ContactSection = () => {
+  const { contact } = mockData;
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    company: '',
+    message: '',
+    service: ''
+  });
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Mock form submission
+    console.log('Form submitted:', formData);
+    setIsSubmitted(true);
+    
+    // Reset form after 3 seconds
+    setTimeout(() => {
+      setIsSubmitted(false);
+      setFormData({
+        name: '',
+        email: '',
+        company: '',
+        message: '',
+        service: ''
+      });
+    }, 3000);
+  };
+
+  return (
+    <section id="contact" className="section-padding">
+      <div className="dark-content-container">
+        <div className="text-center mb-16">
+          <span className="text-brand-primary text-lg font-medium">
+            {contact.subtitle}
+          </span>
+          <h2 className="display-large mt-4 mb-8">
+            {contact.title}
+          </h2>
+          <p className="body-large max-w-3xl mx-auto text-text-secondary">
+            {contact.description}
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* Contact Form */}
+          <div className="bg-white/5 rounded border border-white/10 p-8">
+            {!isSubmitted ? (
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-white mb-2">
+                      Full Name *
+                    </label>
+                    <input
+                      type="text"
+                      name="name"
+                      required
+                      value={formData.name}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 bg-black/30 border border-white/20 rounded text-white placeholder-text-muted focus:border-brand-primary focus:outline-none transition-colors"
+                      placeholder="Your name"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-white mb-2">
+                      Email Address *
+                    </label>
+                    <input
+                      type="email"
+                      name="email"
+                      required
+                      value={formData.email}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 bg-black/30 border border-white/20 rounded text-white placeholder-text-muted focus:border-brand-primary focus:outline-none transition-colors"
+                      placeholder="your@email.com"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-white mb-2">
+                    Company
+                  </label>
+                  <input
+                    type="text"
+                    name="company"
+                    value={formData.company}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 bg-black/30 border border-white/20 rounded text-white placeholder-text-muted focus:border-brand-primary focus:outline-none transition-colors"
+                    placeholder="Your company name"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-white mb-2">
+                    Service Interest
+                  </label>
+                  <select
+                    name="service"
+                    value={formData.service}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 bg-black/30 border border-white/20 rounded text-white focus:border-brand-primary focus:outline-none transition-colors"
+                  >
+                    <option value="">Select a service</option>
+                    <option value="strategic-growth">Strategic Growth Consultation</option>
+                    <option value="operations-evolution">Operations Evolution</option>
+                    <option value="executive-coaching">Executive Coaching</option>
+                    <option value="technology-marketing">Technology Marketing</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-white mb-2">
+                    Message *
+                  </label>
+                  <textarea
+                    name="message"
+                    required
+                    rows={5}
+                    value={formData.message}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 bg-black/30 border border-white/20 rounded text-white placeholder-text-muted focus:border-brand-primary focus:outline-none transition-colors resize-none"
+                    placeholder="Tell me about your current challenges and growth objectives..."
+                  />
+                </div>
+
+                <button type="submit" className="btn-primary w-full">
+                  Send Message
+                  <Send size={20} />
+                </button>
+              </form>
+            ) : (
+              <div className="text-center py-12">
+                <CheckCircle className="text-brand-primary mx-auto mb-4" size={48} />
+                <h3 className="heading-2 mb-4">Message Sent Successfully!</h3>
+                <p className="body-medium text-text-secondary">
+                  Thank you for your interest. I'll get back to you within 24 hours to discuss your growth objectives.
+                </p>
+              </div>
+            )}
+          </div>
+
+          {/* Contact Information */}
+          <div className="space-y-8">
+            {/* Direct Contact */}
+            <div className="bg-black/20 backdrop-blur-sm rounded border border-white/10 p-6">
+              <h3 className="heading-2 mb-6">Let's Connect</h3>
+              
+              <div className="space-y-4">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-brand-primary/20 rounded border border-brand-primary/30 flex items-center justify-center">
+                    <Mail className="text-brand-primary" size={20} />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-white">Email</h4>
+                    <a 
+                      href={`mailto:${contact.email}`}
+                      className="text-text-muted hover:text-brand-primary transition-colors"
+                    >
+                      {contact.email}
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-brand-primary/20 rounded border border-brand-primary/30 flex items-center justify-center">
+                    <Linkedin className="text-brand-primary" size={20} />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-white">LinkedIn</h4>
+                    <a 
+                      href={contact.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-text-muted hover:text-brand-primary transition-colors"
+                    >
+                      Connect on LinkedIn
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Consultation Process */}
+            <div className="bg-gradient-to-r from-brand-primary/10 to-transparent rounded border border-brand-primary/20 p-6">
+              <h3 className="heading-2 mb-6">Consultation Process</h3>
+              
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="w-6 h-6 bg-brand-primary rounded-full flex items-center justify-center text-black text-sm font-bold flex-shrink-0 mt-0.5">
+                    1
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-white mb-1">Discovery Call</h4>
+                    <p className="text-sm text-text-muted">30-minute consultation to understand your challenges and objectives</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-6 h-6 bg-brand-primary rounded-full flex items-center justify-center text-black text-sm font-bold flex-shrink-0 mt-0.5">
+                    2
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-white mb-1">Strategic Assessment</h4>
+                    <p className="text-sm text-text-muted">Comprehensive analysis of your current marketing and operations</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-6 h-6 bg-brand-primary rounded-full flex items-center justify-center text-black text-sm font-bold flex-shrink-0 mt-0.5">
+                    3
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-white mb-1">Customized Proposal</h4>
+                    <p className="text-sm text-text-muted">Tailored transformation roadmap with clear milestones and outcomes</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial */}
+            <div className="bg-black/20 backdrop-blur-sm rounded border border-white/10 p-6">
+              <blockquote className="text-text-secondary italic mb-4">
+                "Lisa transformed our entire approach to growth. Her frameworks helped us evolve from reactive marketing to strategic business transformation."
+              </blockquote>
+              <div className="text-sm">
+                <div className="font-semibold text-white">Sarah Chen</div>
+                <div className="text-text-muted">VP Marketing, TechFlow Systems</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ContactSection;
