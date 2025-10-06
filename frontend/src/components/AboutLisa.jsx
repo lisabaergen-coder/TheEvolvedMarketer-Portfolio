@@ -38,9 +38,9 @@ const AboutLisa = () => {
               </h2>
               <div className="burgundy-accent-line mb-8"></div>
               
-              <div className="space-y-6 mb-10">
+              <div className="space-y-6 mb-10 text-left">
                 {aboutLisa.body.split('\n\n').map((paragraph, index) => (
-                  <p key={index} className="body-medium text-gray-700 leading-relaxed">
+                  <p key={index} className="body-medium text-gray-700 leading-relaxed text-left">
                     {paragraph}
                   </p>
                 ))}
