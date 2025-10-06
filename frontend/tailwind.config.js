@@ -50,8 +50,8 @@ module.exports = {
                                 foreground: '#333333', // Dark Grey
                         },
                         accent: {
-                                DEFAULT: 'hsl(var(--accent))',
-                                foreground: 'hsl(var(--accent-foreground))'
+                                DEFAULT: '#004E53', // Dark Teal
+                                foreground: '#ffffff',
                         },
                         destructive: {
                                 DEFAULT: 'hsl(var(--destructive))',
