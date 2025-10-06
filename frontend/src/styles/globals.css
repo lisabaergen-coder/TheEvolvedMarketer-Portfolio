@@ -243,6 +243,10 @@ body {
   color: var(--text-white);
 }
 
+.section-teal h1, .section-teal h2, .section-teal h3, .section-teal .heading-1, .section-teal .heading-2, .section-teal .heading-3, .section-teal .display-large, .section-teal .display-huge {
+  color: white !important;
+}
+
 /* Layout Utilities */
 .section-padding {
   padding: var(--spacing-xxl) 0;
