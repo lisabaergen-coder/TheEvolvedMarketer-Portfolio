@@ -45,7 +45,6 @@ const Approach = () => {
         <div className="text-center">
           <button className="btn-secondary bg-white text-brand-teal border-white hover:bg-brand-teal hover:text-white">
             {approach.cta}
-            <ArrowRight size={20} />
           </button>
         </div>
       </div>
