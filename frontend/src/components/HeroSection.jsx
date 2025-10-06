@@ -13,8 +13,22 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="pt-20 section-padding bg-gradient-to-br from-brand-light to-white">
-      <div className="light-content-container">
+    <section className="pt-20 section-padding bg-gradient-to-br from-brand-light to-white relative overflow-hidden">
+      {/* Animated Background Banner */}
+      <div className="absolute inset-0 z-0">
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          className="w-full h-full object-cover opacity-20"
+        >
+          <source src="https://customer-assets.emergentagent.com/job_mktg-portfolio-4/artifacts/l3j7ijrs_Image-to-Image-27e24625.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-light/80 to-white/80"></div>
+      </div>
+      
+      <div className="light-content-container relative z-10">
         <div className="grid-2">
           {/* Left Content */}
           <div className="fade-in">
