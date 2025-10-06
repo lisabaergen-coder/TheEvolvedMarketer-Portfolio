@@ -6,20 +6,42 @@ const AboutHero = () => {
   const { hero } = aboutData;
 
   return (
-    <section className="pt-20 section-padding section-white">
-      <div className="light-content-container">
-        <div className="grid grid-cols-5 gap-12 items-center">
+    <section className="pt-20 section-padding section-white relative overflow-hidden min-h-screen">
+      {/* Professional Hero Background */}
+      <div className="absolute inset-0 z-0">
+        <div className="w-full h-full bg-gradient-to-br from-gray-50 to-white"></div>
+      </div>
+      
+      <div className="light-content-container relative z-20">
+        <div className="grid grid-cols-5 gap-12 items-center min-h-[80vh]">
           {/* Left: 60% - Content */}
-          <div className="col-span-3 fade-in">
-            <h1 className="text-5xl font-light text-brand-primary leading-tight mb-8">
+          <div className="col-span-3 fade-in space-y-8">
+            {/* Logo */}
+            <div className="mb-8">
+              <img
+                src="https://customer-assets.emergentagent.com/job_mktg-portfolio-4/artifacts/a2h3wxtx_Logo%20FINAL%20Evolved%20Marketer.png"
+                alt="The Evolved Marketer"
+                className="h-16 object-contain"
+              />
+            </div>
+            
+            {/* Tagline */}
+            <p className="text-xl font-medium text-brand-primary mb-6">
+              Building Predictable Growth.
+            </p>
+            
+            {/* Main Headline */}
+            <h1 className="text-5xl font-light text-gray-900 leading-tight mb-6">
               {hero.headline}
             </h1>
             
-            <h2 className="text-2xl text-gray-700 leading-relaxed mb-8 font-light">
+            {/* Subheadline */}
+            <p className="text-xl text-gray-700 leading-relaxed mb-6 max-w-2xl">
               {hero.subheadline}
-            </h2>
+            </p>
             
-            <p className="text-xl text-gray-600 leading-relaxed mb-12 max-w-2xl">
+            {/* Body Text */}
+            <p className="text-lg text-gray-600 leading-relaxed mb-10 max-w-2xl">
               {hero.body}
             </p>
             
@@ -49,9 +71,9 @@ const AboutHero = () => {
                 </div>
               </div>
               
-              {/* Floating tagline */}
-              <div className="absolute -bottom-4 -left-4 bg-brand-primary text-white px-6 py-3 rounded-lg text-sm font-medium shadow-lg">
-                Building Predictable Growth
+              {/* Floating credential badge */}
+              <div className="absolute -top-4 -right-4 bg-brand-primary text-white px-4 py-2 rounded-lg text-sm font-medium shadow-lg">
+                APR, MCC Certified
               </div>
             </div>
           </div>
