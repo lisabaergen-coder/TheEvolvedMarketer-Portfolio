@@ -39,7 +39,6 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <button className="btn-primary">
                 {hero.ctaPrimary}
-                <ArrowRight size={20} />
               </button>
               <button className="btn-secondary">
                 <Download size={20} />
