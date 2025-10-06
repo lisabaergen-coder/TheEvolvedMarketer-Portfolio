@@ -59,8 +59,8 @@ const AboutSection = () => {
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <CheckCircle className="text-blue-600" size={20} />
+                <div className="w-10 h-10 bg-brand-light rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <CheckCircle className="text-brand-primary" size={20} />
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Proven Expertise</h4>
