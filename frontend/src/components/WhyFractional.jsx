@@ -41,7 +41,6 @@ const WhyFractional = () => {
         <div className="text-center">
           <button className="btn-primary">
             {whyFractional.cta}
-            <ArrowRight size={20} />
           </button>
         </div>
       </div>
