@@ -7,13 +7,9 @@ const Approach = () => {
 
   return (
     <section className="section-padding section-teal relative overflow-hidden">
-      {/* Subtle growth pattern overlay */}
-      <div className="absolute inset-0 opacity-10">
-        <img
-          src={approach.backgroundImage}
-          alt=""
-          className="w-full h-full object-cover"
-        />
+      {/* Subtle growth pattern overlay - removed to fix display issue */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="w-full h-full bg-gradient-to-br from-white/5 to-transparent"></div>
       </div>
 
       <div className="light-content-container relative z-10">
