@@ -81,7 +81,7 @@ const HeroSection = () => {
           {/* Right Content - Professional Headshot */}
           <div className="fade-in flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="w-96 h-96 bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl p-8 shadow-xl">
+              <div className="w-96 h-96 bg-gradient-to-br from-brand-light to-gray-50 rounded-2xl p-8 shadow-xl">
                 <div className="w-full h-full rounded-xl overflow-hidden border-4 border-white shadow-lg">
                   <img
                     src={hero.headshot}
