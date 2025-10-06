@@ -43,7 +43,7 @@ const ContactSection = () => {
     <section id="contact" className="section-padding bg-white">
       <div className="light-content-container">
         <div className="text-center mb-16">
-          <span className="text-gray-700 text-lg font-medium bg-gray-100 px-4 py-2 rounded-full">
+          <span className="text-gray-700 text-lg font-medium bg-brand-light px-4 py-2 rounded-full">
             {contact.subtitle}
           </span>
           <h2 className="display-large mt-6 mb-8 text-gray-900">
@@ -202,7 +202,7 @@ const ContactSection = () => {
               
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 bg-brand-primary rounded-full flex items-center justify-center text-black text-sm font-bold flex-shrink-0 mt-0.5">
+                  <div className="w-6 h-6 bg-brand-primary rounded-full flex items-center justify-center text-white text-sm font-bold flex-shrink-0 mt-0.5">
                     1
                   </div>
                   <div>
@@ -211,7 +211,7 @@ const ContactSection = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 bg-brand-primary rounded-full flex items-center justify-center text-black text-sm font-bold flex-shrink-0 mt-0.5">
+                  <div className="w-6 h-6 bg-brand-primary rounded-full flex items-center justify-center text-white text-sm font-bold flex-shrink-0 mt-0.5">
                     2
                   </div>
                   <div>
@@ -220,7 +220,7 @@ const ContactSection = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 bg-brand-primary rounded-full flex items-center justify-center text-black text-sm font-bold flex-shrink-0 mt-0.5">
+                  <div className="w-6 h-6 bg-brand-primary rounded-full flex items-center justify-center text-white text-sm font-bold flex-shrink-0 mt-0.5">
                     3
                   </div>
                   <div>

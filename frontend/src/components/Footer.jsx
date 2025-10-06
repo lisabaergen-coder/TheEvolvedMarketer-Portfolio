@@ -21,12 +21,11 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-brand-primary rounded-lg flex items-center justify-center">
-                <Award className="text-black" size={24} />
-              </div>
-              <div>
-                <h3 className="text-xl font-light text-gray-900">THE EVOLVED MARKETER</h3>
-                <p className="text-sm text-gray-500">Lisa M. Baergen, APR</p>
+              <div className="logo-container">
+                <img
+                  src="https://customer-assets.emergentagent.com/job_mktg-portfolio-4/artifacts/a2h3wxtx_Logo%20FINAL%20Evolved%20Marketer.png"
+                  alt="The Evolved Marketer"
+                />
               </div>
             </div>
             <p className="body-medium text-gray-600 mb-6 max-w-md">
