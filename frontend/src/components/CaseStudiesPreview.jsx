@@ -39,7 +39,6 @@ const CaseStudiesPreview = () => {
                 
                 <button className="btn-secondary w-full">
                   {caseStudy.cta}
-                  <ArrowRight size={16} />
                 </button>
               </div>
             </div>
