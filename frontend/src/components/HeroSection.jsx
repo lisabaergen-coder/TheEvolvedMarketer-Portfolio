@@ -28,13 +28,17 @@ const HeroSection = () => {
         <div className="grid-2">
           {/* Left: Content */}
           <div className="fade-in">
-            <h1 className="display-huge mb-8 text-gray-900 leading-tight">
-              {hero.headline}
+            <h1 className="display-huge mb-6 text-gray-900 leading-tight text-left">
+              Fractional CMO | Lisa Baergen, APR, MCC
             </h1>
             
-            <p className="body-large mb-10 text-gray-700 leading-relaxed text-left">
-              {hero.subheadline}
-            </p>
+            <h2 className="display-large mb-6 text-gray-800 leading-tight text-left">
+              Building Predictable Growth for SaaS & B2B Tech Ventures
+            </h2>
+            
+            <h3 className="body-large mb-10 text-gray-700 leading-relaxed text-left">
+              I help founders, CEOs, and investors scale faster <span className="text-sm">— with data-driven strategy, investor-grade metrics, and leadership that turns marketing into a profit center.</span>
+            </h3>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <button className="btn-primary">
