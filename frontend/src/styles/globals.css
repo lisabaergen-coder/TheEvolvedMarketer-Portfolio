@@ -238,6 +238,10 @@ body {
   color: var(--text-white);
 }
 
+.section-burgundy h1, .section-burgundy h2, .section-burgundy h3, .section-burgundy .heading-1, .section-burgundy .heading-2, .section-burgundy .heading-3, .section-burgundy .display-large, .section-burgundy .display-huge {
+  color: white !important;
+}
+
 .section-teal {
   background: var(--brand-teal);
   color: var(--text-white);
