@@ -19,7 +19,7 @@ const HomePage = () => {
     <div className="light-container">
       <Header />
       <HeroSection />
-      <InsightBanner />
+      <CredibilityBanner />
       <ByTheNumbers />
       <AboutLisa />
       <WhyFractional />
