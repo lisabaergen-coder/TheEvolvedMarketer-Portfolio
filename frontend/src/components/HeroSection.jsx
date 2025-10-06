@@ -14,11 +14,11 @@ const HeroSection = () => {
           loop 
           muted 
           playsInline
-          className="w-full h-full object-cover opacity-10"
+          className="w-full h-full object-cover opacity-15"
         >
           <source src="https://customer-assets.emergentagent.com/job_mktg-portfolio-4/artifacts/vyyuthgb_Image-to-Image-27e24625.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-white/90"></div>
+        <div className="absolute inset-0 bg-white/85"></div>
       </div>
       
       {/* Thin burgundy accent lines in corner */}
