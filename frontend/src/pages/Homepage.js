@@ -146,13 +146,15 @@ const Homepage = () => {
                   Schedule Consultation
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline" 
-                  className="border-deep-burgundy text-deep-burgundy hover:bg-deep-burgundy hover:text-white px-8 py-4 text-lg"
-                >
-                  View Portfolio
-                </Button>
+                <a href="/services">
+                  <Button 
+                    size="lg" 
+                    variant="outline" 
+                    className="border-deep-burgundy text-deep-burgundy hover:bg-deep-burgundy hover:text-white px-8 py-4 text-lg"
+                  >
+                    View Services
+                  </Button>
+                </a>
               </div>
               
               {/* Quick Stats */}
