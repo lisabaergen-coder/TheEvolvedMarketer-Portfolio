@@ -116,7 +116,7 @@ body {
 
 .body-large {
   font-family: 'Helvetica Neue', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.6;
   color: var(--text-secondary);
@@ -124,7 +124,7 @@ body {
 
 .body-medium {
   font-family: 'Helvetica Neue', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
   color: var(--text-secondary);
@@ -132,7 +132,7 @@ body {
 
 .body-small {
   font-family: 'Helvetica Neue', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
   color: var(--text-secondary);
