@@ -37,12 +37,18 @@ const FinalCTA = () => {
         </div>
 
         <div className="max-w-2xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
             <button className="btn-primary bg-white text-brand-primary hover:bg-gray-100">
               {contact.ctaPrimary}
             </button>
             <button className="btn-secondary border-white text-white hover:bg-white hover:text-brand-primary">
               {contact.ctaSecondary}
+            </button>
+            <button 
+              className="btn-secondary border-white text-white hover:bg-white hover:text-brand-primary"
+              onClick={() => window.open('https://calendly.com/lisa-evolved-marketer', '_blank')}
+            >
+              Schedule Call
             </button>
           </div>
 
