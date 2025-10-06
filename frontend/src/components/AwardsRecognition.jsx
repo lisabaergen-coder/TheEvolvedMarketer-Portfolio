@@ -28,7 +28,11 @@ const AwardsRecognition = () => {
                 <img
                   src={award.image}
                   alt={award.title}
-                  className="w-full h-full object-contain"
+                  className={
+                    award.title.includes('APR') || award.title.includes('TMT') || award.title.includes('SC') 
+                      ? "contain" 
+                      : ""
+                  }
                 />
               </div>
               
