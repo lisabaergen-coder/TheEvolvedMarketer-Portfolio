@@ -28,7 +28,7 @@ const HeroSection = () => {
               {hero.title}
             </h1>
             
-            <h2 className="heading-2 mb-8 text-blue-600 font-medium">
+            <h2 className="heading-2 mb-8 text-gray-700 font-medium">
               {hero.name}
             </h2>
             
