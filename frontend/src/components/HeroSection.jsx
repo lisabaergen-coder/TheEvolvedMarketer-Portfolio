@@ -60,9 +60,10 @@ const HeroSection = () => {
               <div className="w-96 h-96 bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
                 <div className="w-full h-full rounded-xl overflow-hidden">
                   <img
-                    src={hero.headshot}
+                    src="https://customer-assets.emergentagent.com/job_mktg-portfolio-4/artifacts/bs7uptip_headshot%20copy%20small%20jpg.jpg"
                     alt="Lisa Baergen - The Evolved Marketer"
                     className="w-full h-full object-cover object-center"
+                    style={{ imageRendering: 'crisp-edges' }}
                   />
                 </div>
               </div>
