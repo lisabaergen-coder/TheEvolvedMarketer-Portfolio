@@ -424,8 +424,7 @@ body {
   height: 40px;
   width: auto;
   object-fit: contain;
-  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(13deg) brightness(103%) contrast(103%);
-  /* This properly converts the logo to white */
+  /* No filter needed - using actual white logo file */
 }
 
 /* Animations */
