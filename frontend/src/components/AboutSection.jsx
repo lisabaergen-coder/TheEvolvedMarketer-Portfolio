@@ -72,13 +72,13 @@ const AboutSection = () => {
 
           {/* Right Content - Image Placeholder & Achievements */}
           <div className="fade-in space-y-6">
-            {/* IMAGE PLACEHOLDER 1 - Professional Consultation */}
-            <div className="image-placeholder">
-              <div className="image-placeholder-icon">
-                <ImageIcon className="text-white" size={24} />
-              </div>
-              <div className="image-placeholder-text">{about.imagePlaceholder.title}</div>
-              <div className="image-placeholder-subtext">{about.imagePlaceholder.description}</div>
+            {/* Professional Team Collaboration Image */}
+            <div className="card-elevated p-4 bg-white">
+              <img
+                src="https://customer-assets.emergentagent.com/job_mktg-portfolio-4/artifacts/bu0xlh6r_ebf19bf2-bdf9-46d5-9ae5-9c691a0391cf.jpeg"
+                alt="Professional team collaboration and strategic planning"
+                className="w-full h-64 object-cover rounded-lg"
+              />
             </div>
 
             <div className="card-elevated p-8 bg-white">
