@@ -29,8 +29,10 @@ const AwardsRecognition = () => {
                   src={award.image}
                   alt={award.title}
                   className={
-                    award.title.includes('APR') || award.title.includes('TMT') || award.title.includes('SC') 
+                    award.title.includes('APR') || award.title.includes('TMT') 
                       ? "contain" 
+                      : award.title.includes('SC')
+                      ? "w-full h-full object-contain"
                       : ""
                   }
                 />
