@@ -78,8 +78,8 @@ const AboutSection = () => {
               <div className="space-y-4">
                 {about.achievements.map((achievement, index) => (
                   <div key={index} className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg border border-gray-100">
-                    <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="text-blue-600" size={16} />
+                    <div className="w-8 h-8 bg-brand-light rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="text-brand-primary" size={16} />
                     </div>
                     <span className="body-small text-gray-700 font-medium">{achievement}</span>
                   </div>
