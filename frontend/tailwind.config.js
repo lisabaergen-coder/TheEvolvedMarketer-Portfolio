@@ -16,6 +16,16 @@ module.exports = {
                         md: 'calc(var(--radius) - 2px)',
                         sm: 'calc(var(--radius) - 4px)'
                 },
+                        // The Evolved Marketer Brand Colors
+                        'deep-burgundy': '#800020',
+                        'medium-grey': '#77848F', 
+                        'dark-teal': '#004E53',
+                        'bright-burgundy': '#C72C48',
+                        'light-grey': '#E0E0E0',
+                        'dark-grey': '#333333',
+                        'dusty-pink': '#D1A6A1',
+                        
+                        // Original shadcn colors
                 colors: {
                         background: 'hsl(var(--background))',
                         foreground: 'hsl(var(--foreground))',
