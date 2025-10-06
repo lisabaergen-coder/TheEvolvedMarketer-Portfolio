@@ -29,6 +29,7 @@ const Footer = () => {
                   src="https://customer-assets.emergentagent.com/job_mktg-portfolio-4/artifacts/a2h3wxtx_Logo%20FINAL%20Evolved%20Marketer.png"
                   alt="The Evolved Marketer"
                   className="brightness-0 invert"
+                  style={{ filter: 'brightness(0) invert(1)' }}
                 />
               </div>
             </div>
