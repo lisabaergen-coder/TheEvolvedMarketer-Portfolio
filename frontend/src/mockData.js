@@ -1,6 +1,6 @@
 export const mockData = {
   hero: {
-    title: "THE EVOLVED MARKETER",
+    title: "Transform Your Business",
     subtitle: "Unleash Your Inner CMO",
     name: "Lisa M. Baergen, APR",
     description: "Transform your business from operational chaos to systematic innovation with proven frameworks that drive measurable growth.",
@@ -18,7 +18,11 @@ export const mockData = {
       "SC Magazine Technology Awards 2016",
       "APR Accredited Public Relations Professional"
     ],
-    experience: "20+ years driving growth across technology, fintech, and cybersecurity sectors including leadership roles at NU Data Security (Mastercard Company)."
+    experience: "20+ years driving growth across technology, fintech, and cybersecurity sectors including leadership roles at NU Data Security (Mastercard Company).",
+    imagePlaceholder: {
+      title: "Professional Consultation Image",
+      description: "High-quality photo of executive business consultation or strategic planning session"
+    }
   },
 
   methodology: {
@@ -38,10 +42,14 @@ export const mockData = {
           { stage: "Standardization", focus: "Creating repeatable processes", color: "#ea580c" },
           { stage: "Optimization", focus: "Eliminating waste & bottlenecks", color: "#d97706" },
           { stage: "Automation", focus: "Technology does the heavy lifting", color: "#059669" },
-          { stage: "Innovation", focus: "Operations as competitive advantage", color: "#2563eb" }
+          { stage: "Innovation", focus: "Operations as competitive advantage", color: "#8B1538" }
         ]
       }
-    ]
+    ],
+    imagePlaceholder: {
+      title: "Business Transformation Visual",
+      description: "Professional image showing business growth, digital transformation, or strategic planning"
+    }
   },
 
   awards: [
@@ -99,6 +107,10 @@ export const mockData = {
       features: ["Technical positioning", "B2B strategy", "Thought leadership"]
     }
   ],
+  servicesImagePlaceholder: {
+    title: "Services & Technology Image",
+    description: "Professional image showing modern technology, digital marketing tools, or business services"
+  },
 
   caseStudies: [
     {
@@ -116,6 +128,10 @@ export const mockData = {
       results: ["SC Magazine Award recognition", "45% reduction in sales cycle", "Streamlined operations"]
     }
   ],
+  caseStudiesImagePlaceholder: {
+    title: "Success Stories Visual",
+    description: "Professional image showing business success, growth charts, team collaboration, or client meetings"
+  },
 
   stats: {
     awards: "5+",

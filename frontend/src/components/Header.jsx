@@ -17,35 +17,36 @@ const Header = () => {
       <div className="light-content-container">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center">
-            <span className="text-2xl font-light text-gray-900">
-              THE EVOLVED MARKETER
-            </span>
+          <div className="logo-container">
+            <img
+              src="https://customer-assets.emergentagent.com/job_mktg-portfolio-4/artifacts/a2h3wxtx_Logo%20FINAL%20Evolved%20Marketer.png"
+              alt="The Evolved Marketer"
+            />
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <button 
               onClick={() => scrollToSection('about')}
-              className="text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium"
+              className="text-gray-600 hover:text-brand-primary transition-colors duration-300 font-medium"
             >
               About
             </button>
             <button 
               onClick={() => scrollToSection('methodology')}
-              className="text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium"
+              className="text-gray-600 hover:text-brand-primary transition-colors duration-300 font-medium"
             >
               Methodology
             </button>
             <button 
               onClick={() => scrollToSection('awards')}
-              className="text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium"
+              className="text-gray-600 hover:text-brand-primary transition-colors duration-300 font-medium"
             >
               Recognition
             </button>
             <button 
               onClick={() => scrollToSection('services')}
-              className="text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium"
+              className="text-gray-600 hover:text-brand-primary transition-colors duration-300 font-medium"
             >
               Services
             </button>
@@ -72,25 +73,25 @@ const Header = () => {
             <nav className="flex flex-col space-y-4">
               <button 
                 onClick={() => scrollToSection('about')}
-                className="text-left text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium"
+                className="text-left text-gray-600 hover:text-brand-primary transition-colors duration-300 font-medium"
               >
                 About
               </button>
               <button 
                 onClick={() => scrollToSection('methodology')}
-                className="text-left text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium"
+                className="text-left text-gray-600 hover:text-brand-primary transition-colors duration-300 font-medium"
               >
                 Methodology
               </button>
               <button 
                 onClick={() => scrollToSection('awards')}
-                className="text-left text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium"
+                className="text-left text-gray-600 hover:text-brand-primary transition-colors duration-300 font-medium"
               >
                 Recognition
               </button>
               <button 
                 onClick={() => scrollToSection('services')}
-                className="text-left text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium"
+                className="text-left text-gray-600 hover:text-brand-primary transition-colors duration-300 font-medium"
               >
                 Services
               </button>

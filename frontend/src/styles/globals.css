@@ -18,12 +18,12 @@
   --border-medium: #cbd5e0;
   --border-dark: #a0aec0;
   
-  /* Brand Colors - Lisa's Actual Brand */
-  --brand-primary: #00FFD1;
-  --brand-secondary: #6FD2C0;
-  --brand-dark: #00b39e;
-  --brand-light: #e6fffa;
-  --brand-hover: #00e6c7;
+  /* Brand Colors - Deep Burgundy Theme */
+  --brand-primary: #8B1538;
+  --brand-secondary: #A91B47;
+  --brand-dark: #6B1028;
+  --brand-light: #F5E8EC;
+  --brand-hover: #9B1740;
   
   /* Accent Colors */
   --accent-success: #059669;
@@ -139,7 +139,7 @@ body {
 /* Professional Button System */
 .btn-primary {
   background: var(--brand-primary);
-  color: var(--text-primary);
+  color: white;
   border: none;
   border-radius: var(--radius);
   padding: 16px 32px;
@@ -180,7 +180,7 @@ body {
 
 .btn-secondary:hover {
   background: var(--brand-primary);
-  color: var(--text-primary);
+  color: white;
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
 }
@@ -291,6 +291,61 @@ body {
   object-fit: contain;
 }
 
+/* Image Placeholder Styles */
+.image-placeholder {
+  background: var(--brand-light);
+  border: 2px dashed var(--brand-primary);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  padding: var(--spacing-lg);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.image-placeholder:hover {
+  background: var(--bg-secondary);
+  border-color: var(--brand-hover);
+}
+
+.image-placeholder-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--brand-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.image-placeholder-text {
+  color: var(--brand-primary);
+  font-weight: 500;
+  margin-bottom: var(--spacing-xs);
+}
+
+.image-placeholder-subtext {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+/* Logo Styles */
+.logo-container {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
 /* Animations */
 .fade-in {
   animation: fadeIn 0.8s ease-in-out;
@@ -357,5 +412,9 @@ body {
   .hybrid-growth-container {
     max-width: 280px;
     padding: 15px;
+  }
+
+  .logo-container {
+    height: 32px;
   }
 }
