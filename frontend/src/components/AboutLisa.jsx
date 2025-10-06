@@ -48,7 +48,6 @@ const AboutLisa = () => {
 
               <button className="btn-secondary">
                 {aboutLisa.cta}
-                <ArrowRight size={20} />
               </button>
             </div>
           </div>
