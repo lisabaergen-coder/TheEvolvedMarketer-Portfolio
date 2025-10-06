@@ -24,12 +24,11 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="logo-container">
+              <div className="logo-container-footer">
                 <img
                   src="https://customer-assets.emergentagent.com/job_mktg-portfolio-4/artifacts/a2h3wxtx_Logo%20FINAL%20Evolved%20Marketer.png"
                   alt="The Evolved Marketer"
-                  className="brightness-0 invert"
-                  style={{ filter: 'brightness(0) invert(1)' }}
+                  className="footer-logo"
                 />
               </div>
             </div>
