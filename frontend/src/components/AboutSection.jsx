@@ -12,7 +12,7 @@ const AboutSection = () => {
           {/* Left Content */}
           <div className="fade-in">
             <div className="mb-6">
-              <span className="text-blue-600 text-lg font-medium">
+              <span className="text-gray-700 text-lg font-medium bg-brand-light px-4 py-2 rounded-full">
                 {about.subtitle}
               </span>
             </div>
