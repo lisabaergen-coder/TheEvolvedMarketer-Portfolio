@@ -413,6 +413,21 @@ body {
   object-fit: contain;
 }
 
+/* Footer Logo Styles */
+.logo-container-footer {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  /* This inverts the logo to white on dark background */
+}
+
 /* Animations */
 .fade-in {
   animation: fadeIn 0.8s ease-in-out;
