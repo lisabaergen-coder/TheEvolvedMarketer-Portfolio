@@ -9,8 +9,9 @@ const WhyFractional = () => {
     <section className="section-padding section-off-white">
       <div className="light-content-container">
         <div className="text-center mb-16">
-          <h2 className="display-large mb-8 text-gray-900 max-w-4xl mx-auto">
-            {whyFractional.headline}
+          <h2 className="max-w-4xl mx-auto text-gray-900 mb-8">
+            <span className="text-4xl font-light">Achieve Fast-Paced Growth You Can Afford</span>
+            <span className="text-2xl font-light text-gray-600"> — with a Fractional (or Full-Time) CMO</span>
           </h2>
           <div className="burgundy-accent-line mx-auto mb-8"></div>
           
