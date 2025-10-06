@@ -26,35 +26,20 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <button 
-              onClick={() => scrollToSection('about')}
-              className="text-gray-600 hover:text-brand-primary transition-colors duration-300 font-medium"
-            >
+            <div className="text-gray-600 hover:text-brand-primary transition-colors duration-300 font-medium cursor-pointer">
               About
-            </button>
-            <button 
-              onClick={() => scrollToSection('methodology')}
-              className="text-gray-600 hover:text-brand-primary transition-colors duration-300 font-medium"
-            >
-              Methodology
-            </button>
-            <button 
-              onClick={() => scrollToSection('awards')}
-              className="text-gray-600 hover:text-brand-primary transition-colors duration-300 font-medium"
-            >
-              Recognition
-            </button>
-            <button 
-              onClick={() => scrollToSection('services')}
-              className="text-gray-600 hover:text-brand-primary transition-colors duration-300 font-medium"
-            >
+            </div>
+            <div className="text-gray-600 hover:text-brand-primary transition-colors duration-300 font-medium cursor-pointer">
               Services
-            </button>
-            <button 
-              onClick={() => scrollToSection('contact')}
-              className="btn-primary"
-            >
-              Get Started
+            </div>
+            <div className="text-gray-600 hover:text-brand-primary transition-colors duration-300 font-medium cursor-pointer">
+              Success Stories
+            </div>
+            <div className="text-gray-600 hover:text-brand-primary transition-colors duration-300 font-medium cursor-pointer">
+              Hire Lisa Full-Time
+            </div>
+            <button className="btn-primary">
+              Contact
             </button>
           </nav>
 
