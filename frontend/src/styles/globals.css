@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-  /* Light Professional Theme */
+  /* Light Professional Theme - Lisa's Brand Colors */
   --bg-primary: #ffffff;
   --bg-secondary: #f8f9fa;
   --bg-tertiary: #f1f3f5;
@@ -18,11 +18,12 @@
   --border-medium: #cbd5e0;
   --border-dark: #a0aec0;
   
-  /* Brand Colors - Professional Blue */
-  --brand-primary: #2563eb;
-  --brand-secondary: #3b82f6;
-  --brand-light: #dbeafe;
-  --brand-hover: #1d4ed8;
+  /* Brand Colors - Lisa's Actual Brand */
+  --brand-primary: #00FFD1;
+  --brand-secondary: #6FD2C0;
+  --brand-dark: #00b39e;
+  --brand-light: #e6fffa;
+  --brand-hover: #00e6c7;
   
   /* Accent Colors */
   --accent-success: #059669;
@@ -138,7 +139,7 @@ body {
 /* Professional Button System */
 .btn-primary {
   background: var(--brand-primary);
-  color: white;
+  color: var(--text-primary);
   border: none;
   border-radius: var(--radius);
   padding: 16px 32px;
@@ -179,7 +180,7 @@ body {
 
 .btn-secondary:hover {
   background: var(--brand-primary);
-  color: white;
+  color: var(--text-primary);
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
 }
@@ -273,6 +274,23 @@ body {
   object-fit: contain;
 }
 
+/* Hybrid Growth Image Container */
+.hybrid-growth-container {
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border: 2px solid var(--brand-primary);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+}
+
+.hybrid-growth-container img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 /* Animations */
 .fade-in {
   animation: fadeIn 0.8s ease-in-out;
@@ -334,5 +352,10 @@ body {
   .award-circle {
     width: 100px;
     height: 100px;
+  }
+
+  .hybrid-growth-container {
+    max-width: 280px;
+    padding: 15px;
   }
 }
