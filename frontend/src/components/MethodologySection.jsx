@@ -92,14 +92,14 @@ const MethodologySection = () => {
           </div>
         </div>
 
-        {/* IMAGE PLACEHOLDER 2 - Business Transformation */}
+        {/* Strategic Planning Workspace Image */}
         <div className="mb-16">
-          <div className="image-placeholder max-w-2xl mx-auto">
-            <div className="image-placeholder-icon">
-              <ImageIcon className="text-white" size={24} />
-            </div>
-            <div className="image-placeholder-text">{methodology.imagePlaceholder.title}</div>
-            <div className="image-placeholder-subtext">{methodology.imagePlaceholder.description}</div>
+          <div className="card-elevated p-4 bg-white max-w-2xl mx-auto">
+            <img
+              src="https://customer-assets.emergentagent.com/job_mktg-portfolio-4/artifacts/ukeg204r_6fef9fec-1a1a-4478-8a4e-3ce1c3cc1a33.jpeg"
+              alt="Strategic planning workspace with digital tools and frameworks"
+              className="w-full h-64 object-cover rounded-lg"
+            />
           </div>
         </div>
 
