@@ -14,9 +14,9 @@ const WhyFractional = () => {
           </h2>
           <div className="burgundy-accent-line mx-auto mb-8"></div>
           
-          <div className="space-y-6 max-w-4xl mx-auto">
+          <div className="space-y-6 max-w-4xl mx-auto text-left">
             {whyFractional.body.split('\n\n').map((paragraph, index) => (
-              <p key={index} className="body-medium text-gray-700 leading-relaxed">
+              <p key={index} className="body-medium text-gray-700 leading-relaxed text-left">
                 {paragraph}
               </p>
             ))}
