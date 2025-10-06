@@ -1,117 +1,75 @@
 import React from 'react';
-import { ArrowRight, Award, Users, TrendingUp } from 'lucide-react';
+import { ArrowRight, Download } from 'lucide-react';
 import { mockData } from '../mockData';
 
 const HeroSection = () => {
-  const { hero, stats } = mockData;
-
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  const { hero } = mockData;
 
   return (
-    <section className="pt-20 section-padding bg-gradient-to-br from-brand-light to-white relative overflow-hidden">
-      {/* Animated Background Banner */}
+    <section className="pt-20 section-padding section-white relative overflow-hidden">
+      {/* Animated Background Video */}
       <div className="absolute inset-0 z-0">
         <video 
           autoPlay 
           loop 
           muted 
           playsInline
-          className="w-full h-full object-cover opacity-20"
+          className="w-full h-full object-cover opacity-10"
         >
-          <source src="https://customer-assets.emergentagent.com/job_mktg-portfolio-4/artifacts/l3j7ijrs_Image-to-Image-27e24625.mp4" type="video/mp4" />
+          <source src="https://customer-assets.emergentagent.com/job_mktg-portfolio-4/artifacts/vyyuthgb_Image-to-Image-27e24625.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-br from-brand-light/80 to-white/80"></div>
+        <div className="absolute inset-0 bg-white/90"></div>
       </div>
       
-      <div className="light-content-container relative z-10">
+      {/* Thin burgundy accent lines in corner */}
+      <div className="absolute top-20 right-8 w-16 h-16 border-r-2 border-t-2 border-brand-primary opacity-30 z-10"></div>
+      
+      <div className="light-content-container relative z-20">
         <div className="grid-2">
-          {/* Left Content */}
+          {/* Left: Content */}
           <div className="fade-in">
-            <div className="mb-6">
-              <span className="text-gray-700 text-lg font-medium bg-brand-light px-4 py-2 rounded-full">
-                {hero.subtitle}
-              </span>
-            </div>
-            
-            <h1 className="display-huge mb-6 text-gray-900">
-              {hero.title}
+            <h1 className="display-huge mb-8 text-gray-900 leading-tight">
+              {hero.headline}
             </h1>
             
-            <h2 className="heading-2 mb-8 text-brand-primary font-medium">
-              {hero.name}
-            </h2>
-            
-            <p className="body-large mb-10 max-w-lg text-gray-600">
-              {hero.description}
+            <p className="body-large mb-10 text-gray-700 leading-relaxed">
+              {hero.subheadline}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <button onClick={scrollToContact} className="btn-primary">
-                {hero.cta}
+              <button className="btn-primary">
+                {hero.ctaPrimary}
                 <ArrowRight size={20} />
               </button>
               <button className="btn-secondary">
-                View Portfolio
+                <Download size={20} />
+                {hero.ctaSecondary}
               </button>
             </div>
 
-            {/* Key Stats */}
-            <div className="grid grid-cols-3 gap-6">
-              <div className="text-center p-4">
-                <div className="flex justify-center mb-3">
-                  <div className="w-12 h-12 bg-brand-light rounded-full flex items-center justify-center">
-                    <Award className="text-brand-primary" size={24} />
-                  </div>
-                </div>
-                <div className="text-3xl font-light text-gray-900 mb-1">{stats.awards}</div>
-                <div className="text-sm text-gray-500 font-medium">Personal Awards</div>
-              </div>
-              <div className="text-center p-4">
-                <div className="flex justify-center mb-3">
-                  <div className="w-12 h-12 bg-brand-light rounded-full flex items-center justify-center">
-                    <TrendingUp className="text-brand-primary" size={24} />
-                  </div>
-                </div>
-                <div className="text-3xl font-light text-gray-900 mb-1">{stats.experience}</div>
-                <div className="text-sm text-gray-500 font-medium">Years Experience</div>
-              </div>
-              <div className="text-center p-4">
-                <div className="flex justify-center mb-3">
-                  <div className="w-12 h-12 bg-brand-light rounded-full flex items-center justify-center">
-                    <Users className="text-brand-primary" size={24} />
-                  </div>
-                </div>
-                <div className="text-3xl font-light text-gray-900 mb-1">{stats.exits}</div>
-                <div className="text-sm text-gray-500 font-medium">Successful Exits</div>
-              </div>
+            {/* Tagline */}
+            <div className="bg-brand-off-white p-6 rounded-lg border-l-4 border-brand-primary">
+              <p className="text-brand-primary font-medium text-lg">
+                Building Predictable Growth.
+              </p>
             </div>
           </div>
 
-          {/* Right Content - Professional Headshot */}
+          {/* Right: Professional Portrait */}
           <div className="fade-in flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="w-96 h-96 bg-gradient-to-br from-brand-light to-gray-50 rounded-2xl p-8 shadow-xl">
-                <div className="w-full h-full rounded-xl overflow-hidden border-4 border-white shadow-lg">
+              <div className="w-96 h-96 bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
+                <div className="w-full h-full rounded-xl overflow-hidden">
                   <img
                     src={hero.headshot}
-                    alt={hero.name}
+                    alt="Lisa Baergen - The Evolved Marketer"
                     className="w-full h-full object-cover object-center"
                   />
                 </div>
               </div>
               
-              {/* Floating Credential Badges */}
-              <div className="absolute -top-4 -right-4 bg-brand-primary text-white px-4 py-2 rounded-lg text-sm font-medium shadow-lg">
-                APR Certified
-              </div>
-              <div className="absolute -bottom-4 -left-4 bg-white text-gray-800 px-4 py-2 rounded-lg text-sm font-medium shadow-lg border border-gray-200">
-                Businesswoman of the Year 2017
-              </div>
+              {/* Optional marketing overlay - very subtle */}
+              <div className="absolute inset-0 rounded-2xl opacity-5 bg-gradient-to-br from-brand-primary/20 to-transparent pointer-events-none"></div>
             </div>
           </div>
         </div>

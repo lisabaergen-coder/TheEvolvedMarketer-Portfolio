@@ -1,12 +1,17 @@
 import React from 'react';
 import Header from './Header';
 import HeroSection from './HeroSection';
-import AboutSection from './AboutSection';
-import MethodologySection from './MethodologySection';
-import AwardsSection from './AwardsSection';
-import ServicesSection from './ServicesSection';
-import CaseStudiesSection from './CaseStudiesSection';
-import ContactSection from './ContactSection';
+import InsightBanner from './InsightBanner';
+import ByTheNumbers from './ByTheNumbers';
+import AboutLisa from './AboutLisa';
+import WhyFractional from './WhyFractional';
+import ServicesPreview from './ServicesPreview';
+import SignaturePhilosophy from './SignaturePhilosophy';
+import Approach from './Approach';
+import CaseStudiesPreview from './CaseStudiesPreview';
+import AwardsRecognition from './AwardsRecognition';
+import Testimonials from './Testimonials';
+import FinalCTA from './FinalCTA';
 import Footer from './Footer';
 
 const HomePage = () => {
@@ -14,12 +19,17 @@ const HomePage = () => {
     <div className="light-container">
       <Header />
       <HeroSection />
-      <AboutSection />
-      <MethodologySection />
-      <AwardsSection />
-      <ServicesSection />
-      <CaseStudiesSection />
-      <ContactSection />
+      <InsightBanner />
+      <ByTheNumbers />
+      <AboutLisa />
+      <WhyFractional />
+      <ServicesPreview />
+      <SignaturePhilosophy />
+      <Approach />
+      <CaseStudiesPreview />
+      <AwardsRecognition />
+      <Testimonials />
+      <FinalCTA />
       <Footer />
     </div>
   );
