@@ -27,8 +27,8 @@ const ByTheNumbers = () => {
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="metric-number">{metric.number}</div>
-              <div className="metric-label mb-3">{metric.label}</div>
-              <p className="body-small text-gray-600 leading-tight">
+              <div className="metric-label">{metric.label}</div>
+              <p className="metric-description">
                 {metric.description}
               </p>
             </div>
