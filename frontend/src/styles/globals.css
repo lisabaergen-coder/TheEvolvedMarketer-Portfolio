@@ -286,9 +286,30 @@ body {
 }
 
 .burgundy-underline {
-  border-bottom: 2px solid var(--brand-secondary);
-  padding-bottom: 4px;
+  position: relative;
   display: inline-block;
+  padding-bottom: 8px;
+}
+
+.burgundy-underline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, var(--brand-secondary) 0%, var(--brand-secondary) 85%, transparent 100%);
+  transform: rotate(-0.5deg);
+  animation: drawUnderline 2s ease-in-out;
+}
+
+@keyframes drawUnderline {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 /* Metric Cards */
