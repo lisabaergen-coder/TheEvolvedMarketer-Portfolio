@@ -99,7 +99,7 @@ export const mockData = {
         title: "GTM Playbook",
         description: "A complete go-to-market blueprint for your next growth phase.",
         includes: "Positioning, channel plan, and demand generation strategy.",
-        cta: "Request Playbook →"
+        cta: "Request Quote →"
       }
     ],
     image: "https://customer-assets.emergentagent.com/job_mktg-portfolio-4/artifacts/khajydeu_dd92aa48-2bd1-4f8f-8cf6-876713ded8e9.jpeg"
