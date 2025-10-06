@@ -21,14 +21,14 @@ const CaseStudiesSection = () => {
           </p>
         </div>
 
-        {/* IMAGE PLACEHOLDER 4 - Success Stories */}
+        {/* Strategy Sessions Success Image */}
         <div className="mb-16">
-          <div className="image-placeholder max-w-2xl mx-auto">
-            <div className="image-placeholder-icon">
-              <ImageIcon className="text-white" size={24} />
-            </div>
-            <div className="image-placeholder-text">{caseStudiesImagePlaceholder.title}</div>
-            <div className="image-placeholder-subtext">{caseStudiesImagePlaceholder.description}</div>
+          <div className="card-elevated p-4 bg-white max-w-2xl mx-auto">
+            <img
+              src="https://customer-assets.emergentagent.com/job_mktg-portfolio-4/artifacts/xnrhuko8_b6370922-9772-4265-8219-226f1aa26b19.jpeg"
+              alt="Strategy sessions delivering real results for client transformation"
+              className="w-full h-64 object-cover rounded-lg"
+            />
           </div>
         </div>
 
