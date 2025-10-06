@@ -1,7 +1,10 @@
 import React from 'react';
-import { ArrowUp, Mail, Linkedin, Award } from 'lucide-react';
+import { ArrowUp, Mail, Linkedin, Youtube } from 'lucide-react';
+import { mockData } from '../mockData';
 
 const Footer = () => {
+  const { contact } = mockData;
+  
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -14,7 +17,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-50 border-t border-gray-200">
+    <footer className="bg-gray-900 text-white">
       <div className="light-content-container">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 py-16">
@@ -25,112 +28,89 @@ const Footer = () => {
                 <img
                   src="https://customer-assets.emergentagent.com/job_mktg-portfolio-4/artifacts/a2h3wxtx_Logo%20FINAL%20Evolved%20Marketer.png"
                   alt="The Evolved Marketer"
+                  className="brightness-0 invert"
                 />
               </div>
             </div>
-            <p className="body-medium text-gray-600 mb-6 max-w-md">
-              Transforming businesses from operational chaos to systematic innovation through 
-              proven frameworks and strategic excellence.
+            <p className="text-brand-primary font-medium text-lg mb-6">
+              {contact.tagline}
+            </p>
+            <p className="body-medium text-gray-300 mb-6 max-w-md">
+              Fractional CMO services for SaaS & B2B Tech ventures. 
+              Building predictable growth with data-driven strategy and executive leadership.
             </p>
             
             {/* Social Links */}
             <div className="flex gap-4">
               <a 
-                href="mailto:contact@theevolvedmarketer.com"
-                className="w-10 h-10 bg-white rounded-lg border border-gray-200 flex items-center justify-center text-gray-500 hover:text-brand-primary hover:border-brand-primary transition-colors shadow-sm"
+                href={`mailto:${contact.email}`}
+                className="w-10 h-10 bg-gray-800 rounded-lg border border-gray-700 flex items-center justify-center text-gray-300 hover:text-brand-primary hover:border-brand-primary transition-colors"
               >
                 <Mail size={20} />
               </a>
               <a 
-                href="https://linkedin.com/in/lisabaergen"
+                href={contact.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-white rounded-lg border border-gray-200 flex items-center justify-center text-gray-500 hover:text-brand-primary hover:border-brand-primary transition-colors shadow-sm"
+                className="w-10 h-10 bg-gray-800 rounded-lg border border-gray-700 flex items-center justify-center text-gray-300 hover:text-brand-primary hover:border-brand-primary transition-colors"
               >
                 <Linkedin size={20} />
+              </a>
+              <a 
+                href="#youtube"
+                className="w-10 h-10 bg-gray-800 rounded-lg border border-gray-700 flex items-center justify-center text-gray-300 hover:text-brand-primary hover:border-brand-primary transition-colors"
+              >
+                <Youtube size={20} />
               </a>
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Navigation Links */}
           <div>
-            <h4 className="font-semibold text-gray-900 mb-4">Quick Links</h4>
+            <h4 className="font-semibold text-white mb-4">Navigation</h4>
             <nav className="space-y-3">
               <button 
                 onClick={() => scrollToSection('about')}
-                className="block text-gray-600 hover:text-brand-primary transition-colors text-left"
+                className="block text-gray-300 hover:text-white transition-colors text-left"
               >
                 About
               </button>
               <button 
-                onClick={() => scrollToSection('methodology')}
-                className="block text-gray-600 hover:text-brand-primary transition-colors text-left"
-              >
-                Methodology
-              </button>
-              <button 
-                onClick={() => scrollToSection('awards')}
-                className="block text-gray-600 hover:text-brand-primary transition-colors text-left"
-              >
-                Recognition
-              </button>
-              <button 
                 onClick={() => scrollToSection('services')}
-                className="block text-gray-600 hover:text-brand-primary transition-colors text-left"
+                className="block text-gray-300 hover:text-white transition-colors text-left"
               >
                 Services
               </button>
+              <div className="text-gray-300">Success Stories</div>
+              <div className="text-gray-300">Hire Lisa Full-Time</div>
+              <div className="text-gray-300">Contact</div>
             </nav>
           </div>
 
           {/* Services */}
           <div>
-            <h4 className="font-semibold text-gray-900 mb-4">Services</h4>
+            <h4 className="font-semibold text-white mb-4">Services</h4>
             <nav className="space-y-3">
-              <div className="text-gray-600 text-sm">Strategic Growth Consultation</div>
-              <div className="text-gray-600 text-sm">Operations Evolution</div>
-              <div className="text-gray-600 text-sm">Executive Coaching</div>
-              <div className="text-gray-600 text-sm">Technology Marketing</div>
+              <div className="text-gray-300 text-sm">Growth Audit</div>
+              <div className="text-gray-300 text-sm">Fractional CMO</div>
+              <div className="text-gray-300 text-sm">GTM Playbook</div>
+              <div className="text-gray-300 text-sm">Full-Time Executive</div>
             </nav>
           </div>
         </div>
 
-        {/* Recognition Banner */}
-        <div className="border-t border-gray-200 py-8">
-          <div className="flex flex-wrap items-center justify-center gap-8 text-center">
-            <div className="flex items-center gap-2">
-              <div className="w-6 h-6 bg-brand-light rounded-full flex items-center justify-center">
-                <Award className="text-brand-primary" size={16} />
-              </div>
-              <span className="text-sm text-gray-600">TMT Businesswoman of the Year 2017</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-6 h-6 bg-brand-light rounded-full flex items-center justify-center">
-                <Award className="text-brand-primary" size={16} />
-              </div>
-              <span className="text-sm text-gray-600">Golden Bridge Marketing Excellence</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-6 h-6 bg-brand-light rounded-full flex items-center justify-center">
-                <Award className="text-brand-primary" size={16} />
-              </div>
-              <span className="text-sm text-gray-600">APR Accredited Professional</span>
-            </div>
-          </div>
-        </div>
-
         {/* Bottom Footer */}
-        <div className="border-t border-gray-200 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="text-sm text-gray-500">
+        <div className="border-t border-gray-800 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="text-sm text-gray-400">
             © 2024 Lisa M. Baergen, APR. All rights reserved.
           </div>
           
           <div className="flex items-center gap-6">
-            <div className="text-sm text-gray-500">Privacy Policy</div>
-            <div className="text-sm text-gray-500">Terms of Service</div>
+            <div className="text-sm text-gray-400">Privacy Policy</div>
+            <div className="text-sm text-gray-400">Terms of Service</div>
             <button
               onClick={scrollToTop}
-              className="flex items-center gap-2 text-brand-primary hover:text-brand-dark transition-colors"
+              className="flex items-center gap-2 text-brand-primary hover:text-white transition-colors"
             >
               <span className="text-sm">Back to Top</span>
               <ArrowUp size={16} />
