@@ -52,12 +52,10 @@ const MethodologySection = () => {
           <div className="lg:w-2/3">
             {activeFramework === 0 && (
               <div className="fade-in">
-                <div className="card-elevated p-6 bg-white">
+                <div className="hybrid-growth-container">
                   <img
                     src={methodology.frameworks[0].image}
                     alt="Hybrid Growth Model"
-                    className="w-full max-w-md mx-auto rounded-lg border-2 border-blue-200"
-                    style={{ maxHeight: '400px', objectFit: 'contain' }}
                   />
                 </div>
               </div>
