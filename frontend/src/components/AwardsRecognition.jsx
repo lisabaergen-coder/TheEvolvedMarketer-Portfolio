@@ -31,8 +31,8 @@ const AwardsRecognition = () => {
                   className={
                     award.title.includes('APR') || award.title.includes('TMT') 
                       ? "contain" 
-                      : award.title.includes('SC')
-                      ? "w-full h-full object-contain"
+                      : award.title.includes('Technology Excellence')
+                      ? "contain"
                       : ""
                   }
                 />
