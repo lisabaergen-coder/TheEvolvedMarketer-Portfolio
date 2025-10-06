@@ -6,16 +6,16 @@ const CaseStudiesSection = () => {
   const { caseStudies } = mockData;
 
   return (
-    <section className="section-padding bg-bg-secondary">
-      <div className="dark-content-container">
+    <section className="section-padding bg-gray-50">
+      <div className="light-content-container">
         <div className="text-center mb-16">
-          <span className="text-brand-primary text-lg font-medium">
+          <span className="text-blue-600 text-lg font-medium bg-blue-100 px-4 py-2 rounded-full">
             Success Stories
           </span>
-          <h2 className="display-large mt-4 mb-8">
+          <h2 className="display-large mt-6 mb-8 text-gray-900">
             Measurable Transformation
           </h2>
-          <p className="body-large max-w-3xl mx-auto text-text-secondary">
+          <p className="body-large max-w-3xl mx-auto text-gray-600">
             Real results from real companies. See how my frameworks have transformed businesses 
             across technology, cybersecurity, and fintech sectors.
           </p>
@@ -25,43 +25,49 @@ const CaseStudiesSection = () => {
           {caseStudies.map((study, index) => (
             <div 
               key={index}
-              className="bg-black/30 backdrop-blur-sm rounded border border-white/10 p-8 hover-lift fade-in"
+              className="card-elevated p-8 bg-white fade-in"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 {/* Case Study Header */}
                 <div className="lg:col-span-2">
                   <div className="flex items-center gap-3 mb-4">
-                    <Target className="text-brand-primary" size={24} />
-                    <h3 className="heading-1">{study.title}</h3>
+                    <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                      <Target className="text-blue-600" size={20} />
+                    </div>
+                    <h3 className="heading-2 text-gray-900">{study.title}</h3>
                   </div>
-                  <p className="body-medium text-brand-primary mb-6">{study.client}</p>
+                  <p className="body-medium text-blue-600 font-semibold mb-6">{study.client}</p>
                   
                   <div className="space-y-6">
                     <div>
-                      <h4 className="font-semibold text-white mb-2">Challenge</h4>
-                      <p className="body-small text-text-secondary">{study.challenge}</p>
+                      <h4 className="font-semibold text-gray-900 mb-2">Challenge</h4>
+                      <p className="body-small text-gray-600">{study.challenge}</p>
                     </div>
                     
                     <div>
-                      <h4 className="font-semibold text-white mb-2">Solution</h4>
-                      <p className="body-small text-text-secondary">{study.solution}</p>
+                      <h4 className="font-semibold text-gray-900 mb-2">Solution</h4>
+                      <p className="body-small text-gray-600">{study.solution}</p>
                     </div>
                   </div>
                 </div>
 
                 {/* Results */}
-                <div className="bg-white/5 rounded border border-white/5 p-6">
+                <div className="bg-blue-50 rounded-xl border border-blue-100 p-6">
                   <div className="flex items-center gap-2 mb-4">
-                    <TrendingUp className="text-brand-primary" size={20} />
-                    <h4 className="font-semibold text-white">Key Results</h4>
+                    <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                      <TrendingUp className="text-blue-600" size={16} />
+                    </div>
+                    <h4 className="font-semibold text-gray-900">Key Results</h4>
                   </div>
                   
                   <div className="space-y-3">
                     {study.results.map((result, resultIndex) => (
                       <div key={resultIndex} className="flex items-start gap-2">
-                        <CheckCircle className="text-brand-primary flex-shrink-0 mt-0.5" size={16} />
-                        <span className="body-small text-text-muted">{result}</span>
+                        <div className="w-4 h-4 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                          <CheckCircle className="text-blue-600" size={12} />
+                        </div>
+                        <span className="body-small text-gray-700">{result}</span>
                       </div>
                     ))}
                   </div>
@@ -73,9 +79,9 @@ const CaseStudiesSection = () => {
 
         {/* Case Study CTA */}
         <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-brand-primary/10 to-transparent rounded border border-brand-primary/20 p-8 max-w-3xl mx-auto">
-            <h3 className="heading-2 mb-4">Ready for Your Transformation?</h3>
-            <p className="body-medium text-text-secondary mb-6">
+          <div className="card-elevated bg-gradient-to-r from-blue-50 to-white border-2 border-blue-100 p-8 max-w-3xl mx-auto">
+            <h3 className="heading-2 mb-4 text-gray-900">Ready for Your Transformation?</h3>
+            <p className="body-medium text-gray-600 mb-6">
               Let's discuss how these proven frameworks can be adapted to drive growth in your organization.
             </p>
             <button 

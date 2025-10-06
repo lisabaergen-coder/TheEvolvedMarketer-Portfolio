@@ -12,16 +12,16 @@ const ServicesSection = () => {
   };
 
   return (
-    <section id="services" className="section-padding">
-      <div className="dark-content-container">
+    <section id="services" className="section-padding bg-white">
+      <div className="light-content-container">
         <div className="text-center mb-16">
-          <span className="text-brand-primary text-lg font-medium">
+          <span className="text-blue-600 text-lg font-medium bg-blue-100 px-4 py-2 rounded-full">
             Strategic Services
           </span>
-          <h2 className="display-large mt-4 mb-8">
+          <h2 className="display-large mt-6 mb-8 text-gray-900">
             Transform Your Business
           </h2>
-          <p className="body-large max-w-3xl mx-auto text-text-secondary">
+          <p className="body-large max-w-3xl mx-auto text-gray-600">
             Comprehensive strategic services designed to evolve your marketing approach 
             and unlock sustainable growth across all business functions.
           </p>
@@ -31,26 +31,28 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="bg-white/5 rounded border border-white/10 p-8 hover-lift fade-in"
+              className="card-elevated p-8 bg-white fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-16 h-16 bg-brand-primary/20 rounded border border-brand-primary/30 flex items-center justify-center flex-shrink-0">
-                  <div className="text-brand-primary">
+                <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <div className="text-blue-600">
                     {getServiceIcon(index)}
                   </div>
                 </div>
                 <div>
-                  <h3 className="heading-2 mb-3">{service.title}</h3>
-                  <p className="body-medium text-text-secondary">{service.description}</p>
+                  <h3 className="heading-3 mb-3 text-gray-900">{service.title}</h3>
+                  <p className="body-medium text-gray-600">{service.description}</p>
                 </div>
               </div>
 
               <div className="space-y-3 mb-6">
                 {service.features.map((feature, featureIndex) => (
                   <div key={featureIndex} className="flex items-center gap-3">
-                    <CheckCircle className="text-brand-primary flex-shrink-0" size={16} />
-                    <span className="body-small text-text-muted">{feature}</span>
+                    <div className="w-5 h-5 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="text-blue-600" size={12} />
+                    </div>
+                    <span className="body-small text-gray-600">{feature}</span>
                   </div>
                 ))}
               </div>
@@ -67,43 +69,43 @@ const ServicesSection = () => {
         </div>
 
         {/* Service Approach */}
-        <div className="bg-gradient-to-r from-brand-primary/10 to-transparent rounded border border-brand-primary/20 p-8">
+        <div className="card-elevated bg-gradient-to-r from-blue-50 to-white border-2 border-blue-100 p-8">
           <div className="grid-2">
             <div>
-              <h3 className="heading-1 mb-6">The Evolved Approach</h3>
-              <p className="body-medium text-text-secondary mb-6">
+              <h3 className="heading-1 mb-6 text-gray-900">The Evolved Approach</h3>
+              <p className="body-medium text-gray-600 mb-6">
                 Every engagement begins with understanding your unique challenges and growth objectives. 
                 I don't believe in one-size-fits-all solutions—each strategy is tailored to your business, 
                 industry, and market dynamics.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-brand-primary rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 flex-shrink-0"></div>
                   <div>
-                    <h4 className="font-semibold text-white mb-1">Discovery & Analysis</h4>
-                    <p className="text-sm text-text-muted">Deep dive into your current state and growth potential</p>
+                    <h4 className="font-semibold text-gray-900 mb-1">Discovery & Analysis</h4>
+                    <p className="text-sm text-gray-600">Deep dive into your current state and growth potential</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-brand-primary rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 flex-shrink-0"></div>
                   <div>
-                    <h4 className="font-semibold text-white mb-1">Strategic Framework Design</h4>
-                    <p className="text-sm text-text-muted">Custom methodology aligned with your objectives</p>
+                    <h4 className="font-semibent text-gray-900 mb-1">Strategic Framework Design</h4>
+                    <p className="text-sm text-gray-600">Custom methodology aligned with your objectives</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-brand-primary rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 flex-shrink-0"></div>
                   <div>
-                    <h4 className="font-semibold text-white mb-1">Implementation & Optimization</h4>
-                    <p className="text-sm text-text-muted">Hands-on execution with continuous improvement</p>
+                    <h4 className="font-semibold text-gray-900 mb-1">Implementation & Optimization</h4>
+                    <p className="text-sm text-gray-600">Hands-on execution with continuous improvement</p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="flex items-center justify-center">
               <div className="text-center">
-                <div className="text-6xl font-bold text-brand-primary mb-4">300%</div>
-                <p className="text-text-muted">Average growth increase across client engagements</p>
+                <div className="text-6xl font-light text-blue-600 mb-4">300%</div>
+                <p className="text-gray-600 font-medium">Average growth increase across client engagements</p>
               </div>
             </div>
           </div>
