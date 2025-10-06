@@ -18,12 +18,12 @@ const Header = () => {
       <div className="light-content-container">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="logo-container">
+          <Link to="/" className="logo-container">
             <img
               src="https://customer-assets.emergentagent.com/job_mktg-portfolio-4/artifacts/a2h3wxtx_Logo%20FINAL%20Evolved%20Marketer.png"
               alt="The Evolved Marketer"
             />
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
