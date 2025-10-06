@@ -176,6 +176,7 @@ const ServicesPage = () => {
               <a href="/" className="text-dark-grey hover:text-deep-burgundy transition-colors">Home</a>
               <a href="/services" className="text-deep-burgundy font-medium">Services</a>
               <a href="/hire" className="text-dark-grey hover:text-deep-burgundy transition-colors">Hire Lisa</a>
+              <a href="/about" className="text-dark-grey hover:text-deep-burgundy transition-colors">About</a>
               <a href="#contact" className="text-dark-grey hover:text-deep-burgundy transition-colors">Contact</a>
               <Button className="bg-deep-burgundy hover:bg-bright-burgundy text-white">
                 Get Started
