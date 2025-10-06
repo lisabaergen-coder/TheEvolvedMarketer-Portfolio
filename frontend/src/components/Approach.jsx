@@ -31,7 +31,7 @@ const Approach = () => {
               <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 text-brand-teal font-bold text-xl">
                 {step.number}
               </div>
-              <p className="body-small text-white font-medium leading-tight">
+              <p className="body-small text-white font-bold leading-tight">
                 {step.label}
               </p>
             </div>
