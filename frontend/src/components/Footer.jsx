@@ -26,7 +26,7 @@ const Footer = () => {
             <div className="flex items-center gap-3 mb-6">
               <div className="logo-container-footer">
                 <img
-                  src="https://customer-assets.emergentagent.com/job_mktg-portfolio-4/artifacts/a2h3wxtx_Logo%20FINAL%20Evolved%20Marketer.png"
+                  src="https://customer-assets.emergentagent.com/job_mktg-portfolio-4/artifacts/ioxp5apn_Final%20Logo%20Reversed%20-%20Edited.png"
                   alt="The Evolved Marketer"
                   className="footer-logo"
                 />
