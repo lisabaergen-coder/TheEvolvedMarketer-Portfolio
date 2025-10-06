@@ -48,7 +48,6 @@ const ServicesPreview = () => {
 
               <button className="btn-secondary w-full">
                 {service.cta}
-                <ArrowRight size={16} />
               </button>
             </div>
           ))}
