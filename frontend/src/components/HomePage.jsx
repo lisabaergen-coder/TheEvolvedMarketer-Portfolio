@@ -11,7 +11,7 @@ import Footer from './Footer';
 
 const HomePage = () => {
   return (
-    <div className="dark-container">
+    <div className="light-container">
       <Header />
       <HeroSection />
       <AboutSection />

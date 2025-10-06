@@ -13,12 +13,12 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-sm border-b border-white/10">
-      <div className="dark-content-container">
+    <header className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm">
+      <div className="light-content-container">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <span className="text-xl font-semibold text-white">
+            <span className="text-2xl font-light text-gray-900">
               THE EVOLVED MARKETER
             </span>
           </div>
@@ -27,25 +27,25 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <button 
               onClick={() => scrollToSection('about')}
-              className="text-gray-400 hover:text-white transition-colors duration-300"
+              className="text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium"
             >
               About
             </button>
             <button 
               onClick={() => scrollToSection('methodology')}
-              className="text-gray-400 hover:text-white transition-colors duration-300"
+              className="text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium"
             >
               Methodology
             </button>
             <button 
               onClick={() => scrollToSection('awards')}
-              className="text-gray-400 hover:text-white transition-colors duration-300"
+              className="text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium"
             >
               Recognition
             </button>
             <button 
               onClick={() => scrollToSection('services')}
-              className="text-gray-400 hover:text-white transition-colors duration-300"
+              className="text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium"
             >
               Services
             </button>
@@ -59,7 +59,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-white"
+            className="md:hidden text-gray-900"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -68,29 +68,29 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-white/10">
+          <div className="md:hidden py-4 border-t border-gray-200">
             <nav className="flex flex-col space-y-4">
               <button 
                 onClick={() => scrollToSection('about')}
-                className="text-left text-gray-400 hover:text-white transition-colors duration-300"
+                className="text-left text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium"
               >
                 About
               </button>
               <button 
                 onClick={() => scrollToSection('methodology')}
-                className="text-left text-gray-400 hover:text-white transition-colors duration-300"
+                className="text-left text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium"
               >
                 Methodology
               </button>
               <button 
                 onClick={() => scrollToSection('awards')}
-                className="text-left text-gray-400 hover:text-white transition-colors duration-300"
+                className="text-left text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium"
               >
                 Recognition
               </button>
               <button 
                 onClick={() => scrollToSection('services')}
-                className="text-left text-gray-400 hover:text-white transition-colors duration-300"
+                className="text-left text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium"
               >
                 Services
               </button>

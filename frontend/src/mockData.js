@@ -5,7 +5,7 @@ export const mockData = {
     name: "Lisa M. Baergen, APR",
     description: "Transform your business from operational chaos to systematic innovation with proven frameworks that drive measurable growth.",
     cta: "Discover My Methodology",
-    headshot: "https://customer-assets.emergentagent.com/job_mktg-portfolio-4/artifacts/jy6a0jou_headshottransparent2.png"
+    headshot: "https://customer-assets.emergentagent.com/job_mktg-portfolio-4/artifacts/uyv9s966_headshottransparent.png"
   },
   
   about: {
@@ -34,11 +34,11 @@ export const mockData = {
         name: "Operations Transformation",
         description: "5-stage evolution: Chaos → Standardization → Optimization → Automation → Innovation.",
         stages: [
-          { stage: "Chaos", focus: "Fighting fires daily", color: "#FF6B6B" },
-          { stage: "Standardization", focus: "Creating repeatable processes", color: "#FF8E53" },
-          { stage: "Optimization", focus: "Eliminating waste & bottlenecks", color: "#FFD93D" },
-          { stage: "Automation", focus: "Technology does the heavy lifting", color: "#6BCF7F" },
-          { stage: "Innovation", focus: "Operations as competitive advantage", color: "#4ECDC4" }
+          { stage: "Chaos", focus: "Fighting fires daily", color: "#dc2626" },
+          { stage: "Standardization", focus: "Creating repeatable processes", color: "#ea580c" },
+          { stage: "Optimization", focus: "Eliminating waste & bottlenecks", color: "#d97706" },
+          { stage: "Automation", focus: "Technology does the heavy lifting", color: "#059669" },
+          { stage: "Innovation", focus: "Operations as competitive advantage", color: "#2563eb" }
         ]
       }
     ]
@@ -68,6 +68,12 @@ export const mockData = {
       organization: "Canadian Public Relations Society",
       year: "2006",
       image: "https://customer-assets.emergentagent.com/job_mktg-portfolio-4/artifacts/c1oj0ovg_CPRS%20APR%20Certificate%20Baergen.jpg"
+    },
+    {
+      title: "TMT Recognition",
+      organization: "Technology Media & Telecommunications",
+      year: "2017",
+      image: "https://customer-assets.emergentagent.com/job_mktg-portfolio-4/artifacts/oynmhv41_TMT.jpeg"
     }
   ],
 
@@ -103,13 +109,20 @@ export const mockData = {
       results: ["300% increase in qualified leads", "Successful acquisition by Mastercard", "Industry recognition"]
     },
     {
-      title: "Cybersecurity Excellence",
+      title: "Cybersecurity Excellence", 
       client: "Enterprise Security Client",
       challenge: "Transform complex technical solutions into compelling market narratives",
       solution: "Operations transformation methodology with automated lead nurturing",
       results: ["SC Magazine Award recognition", "45% reduction in sales cycle", "Streamlined operations"]
     }
   ],
+
+  stats: {
+    awards: "5+",
+    experience: "20+",
+    exits: "2",
+    successRate: "100%"
+  },
 
   contact: {
     title: "Ready to Evolve Your Marketing?",
