@@ -38,8 +38,8 @@ module.exports = {
                                 foreground: 'hsl(var(--popover-foreground))'
                         },
                         primary: {
-                                DEFAULT: 'hsl(var(--primary))',
-                                foreground: 'hsl(var(--primary-foreground))'
+                                DEFAULT: '#800020', // Deep Burgundy as primary
+                                foreground: '#ffffff',
                         },
                         secondary: {
                                 DEFAULT: 'hsl(var(--secondary))',
