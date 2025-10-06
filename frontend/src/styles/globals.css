@@ -193,6 +193,17 @@ body {
   box-shadow: var(--shadow-lg);
 }
 
+/* White text buttons for colored backgrounds */
+.section-burgundy .btn-secondary {
+  color: white;
+  border-color: white;
+}
+
+.section-burgundy .btn-secondary:hover {
+  background: white;
+  color: var(--brand-primary);
+}
+
 /* Professional Card System */
 .card {
   background: white;
