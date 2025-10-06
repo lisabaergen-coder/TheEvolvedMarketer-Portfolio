@@ -102,7 +102,7 @@ const Footer = () => {
         {/* Bottom Footer */}
         <div className="border-t border-gray-800 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-sm text-gray-400">
-            © 2024 Lisa M. Baergen, APR. All rights reserved.
+            © 2025 The Evolved Marketer. All rights reserved.
           </div>
           
           <div className="flex items-center gap-6">
