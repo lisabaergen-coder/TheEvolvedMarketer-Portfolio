@@ -27,14 +27,14 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        {/* IMAGE PLACEHOLDER 3 - Services & Technology */}
+        {/* Professional Services Image */}
         <div className="mb-16">
-          <div className="image-placeholder max-w-2xl mx-auto">
-            <div className="image-placeholder-icon">
-              <ImageIcon className="text-white" size={24} />
-            </div>
-            <div className="image-placeholder-text">{servicesImagePlaceholder.title}</div>
-            <div className="image-placeholder-subtext">{servicesImagePlaceholder.description}</div>
+          <div className="card-elevated p-4 bg-white max-w-2xl mx-auto">
+            <img
+              src="https://customer-assets.emergentagent.com/job_mktg-portfolio-4/artifacts/khajydeu_dd92aa48-2bd1-4f8f-8cf6-876713ded8e9.jpeg"
+              alt="Professional woman delivering strategic marketing services"
+              className="w-full h-64 object-cover rounded-lg"
+            />
           </div>
         </div>
 
